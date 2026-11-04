@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazonas Inovare | Fale com um especialista na feira</title>
+<meta name="description" content="Gestão de terminais POS, gateway de pagamentos, laboratório, gestão de mídia e AI Retail. Deixe seu contato e um especialista da Inovare retorna para você.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--ink:#021C24;--pet:#025468;--teal:#6CBBBD;--gelo:#F4F7F8;--linha:#C9D8DA;--txt:#0A2C36;--sub:#3E5A64;--f:"Barlow",Arial,sans-serif;--b:"IBM Plex Sans",Arial,sans-serif;--gut:clamp(20px,4vw,64px);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:#fff;font-family:var(--b);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 6px var(--ink)}
+.band{position:relative;width:100%;overflow:hidden;background:#095B72;line-height:0}
+.band svg.malha{display:block;width:100%;height:auto}
+/* movimento, no gesto do vídeo do post: tudo entra da esquerda para a direita (malha, logo, palavras);
+   depois a malha segue andando para a direita, sem emenda, no sentido dos chevrons */
+.ch{opacity:0}
+.go .ch{animation:chIn .8s var(--ease) both,sw 3.8s cubic-bezier(.45,0,.2,1) infinite;animation-delay:calc(var(--d)*1ms),calc(2s + var(--s)*1ms)}
+.go.still .ch{animation:sw 3.8s cubic-bezier(.45,0,.2,1) infinite;animation-delay:calc(var(--s)*1ms);opacity:1}
+.drift{animation:drift 24s linear infinite;will-change:transform}
+.lg{opacity:0}
+.go .lg{animation:chIn .8s var(--ease) .9s both}
+.go.still .lg{animation:none;opacity:1}
+.go .ch.g.hit{animation:hit .7s var(--ease) forwards;transform-box:fill-box;transform-origin:center}
+@keyframes chIn{from{opacity:0;transform:translateX(-64px)}to{opacity:1;transform:none}}
+@keyframes sw{0%,60%,100%{opacity:1}25%{opacity:.5}}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(var(--P))}}
+@keyframes hit{0%{opacity:1;transform:scale(1)}35%{opacity:1;transform:scale(1.55)}100%{opacity:1;transform:scale(1)}}
+.in1,.w{opacity:0;transform:translateX(-36px)}
+.go-t .in1,.go-t .w{animation:chIn .7s var(--ease) both;animation-delay:calc(1.1s + var(--i)*110ms)}
+.w{display:inline-block}
+.stage{position:relative;z-index:2;background:var(--ink);padding:clamp(28px,5vh,52px) var(--gut) clamp(40px,7vh,72px)}
+.wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,88px);align-items:start;max-width:1360px;margin:0 auto}
+h1{font:800 clamp(40px,5.8vw,86px)/.98 var(--f);letter-spacing:-.015em;margin:0 0 clamp(20px,3.4vh,34px);text-wrap:balance}
+h1 .ln{display:block}
+.in1{opacity:0;transform:translateX(-30px)}
+.go-t .in1{animation:chIn .7s var(--ease) both;animation-delay:calc(1.15s + var(--i)*110ms)}
+.lead{font:500 clamp(18px,1.7vw,23px)/1.3 var(--f);color:#C5DDE1;margin:0 0 12px}
+.rot{position:relative;height:clamp(96px,10vw,128px)}
+.rot ul{margin:0;padding:0}
+.rot li{position:absolute;left:0;top:0;list-style:none;opacity:0;transform:translateX(-26px);transition:opacity .5s ease,transform .6s var(--ease);pointer-events:none}
+.rot li.on{opacity:1;transform:none}
+.rot li.out{opacity:0;transform:translateX(26px)}
+.nm{display:flex;align-items:center;gap:.3em;font:800 clamp(30px,4vw,56px)/1 var(--f);letter-spacing:-.01em}
+.nm svg{width:.55em;height:.7em;flex:none}
+.ds{font:500 clamp(16px,1.4vw,20px)/1.35 var(--b);color:#C5DDE1;margin-top:8px;max-width:34ch}
+.card{background:#fff;color:var(--txt);padding:clamp(22px,2.6vw,36px);position:relative;margin-top:calc(-1*clamp(36px,6vh,72px));z-index:3}
+.card h2{font:800 clamp(26px,2.4vw,34px)/1.05 var(--f);color:var(--pet);margin:0 0 6px}
+.card p.s{margin:0 0 18px;color:var(--sub);font-size:16px}
+.fld{margin-bottom:12px}
+label{display:block;font:600 14px/1.2 var(--f);margin-bottom:6px}
+input[type=text],input[type=email],select{width:100%;font:inherit;font-size:17px;color:var(--txt);background:#fff;border:1px solid var(--linha);border-radius:0;padding:13px 12px;appearance:none}
+select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23025468' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat right 14px center;padding-right:38px}
+input[aria-invalid=true],select[aria-invalid=true]{border:2px solid #C62828}
+.err{margin:6px 0 0;font-size:14px;font-weight:500;color:#9B1C1C}
+.ck{display:flex;gap:10px;align-items:flex-start;font:400 14px/1.4 var(--b);color:var(--sub);margin:4px 0 14px}
+.ck input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:var(--pet)}
+.ck a{color:var(--pet)}
+.btn{width:100%;font:700 18px/1 var(--f);color:#fff;background:var(--pet);border:0;padding:17px 18px;cursor:pointer;display:flex;justify-content:center;align-items:center;gap:10px}
+.btn:hover{background:var(--ink)}
+.btn svg{width:16px;height:16px}
+.ok{display:none}
+.ok svg{width:46px;height:auto;color:var(--pet);margin-bottom:14px}
+.card.done form,.card.done .cab{display:none}.card.done .ok{display:block}
+.rod{max-width:1360px;margin:34px auto 0;font-size:13px;color:#9DBCC2;display:flex;gap:18px;flex-wrap:wrap}
+.rod a{color:#fff}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;gap:26px}.card{margin-top:0}.rot{height:clamp(100px,26vw,130px)}}
+@media (prefers-reduced-motion:reduce){
+ html:not(.force) .ch,html:not(.force) .lg,html:not(.force) .in1,html:not(.force) .w,html:not(.force) .drift{animation:none!important;opacity:1!important;transform:none!important}
+ html:not(.force) .rot{height:auto}html:not(.force) .rot li{position:static;opacity:1;transform:none;margin-bottom:10px;transition:none}html:not(.force) .rot li .ds{display:none}
+}
+
+.rp{background:var(--pet);color:#fff;padding:56px var(--gut) 28px;position:relative;z-index:2}
+.rp .in{max-width:1360px;margin:0 auto}
+.rp .g{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:32px}
+.rp .logo{display:block;width:190px;color:#fff}
+.rp .dsc{margin:12px 0 0;max-width:36ch;font-size:15px;line-height:1.5;color:rgba(255,255,255,.82)}
+.rp h4{margin:0 0 14px;font:700 15px/1.2 var(--f);color:#fff}
+.rp ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:16px}
+.rp a{color:rgba(255,255,255,.9);text-decoration:none}
+.rp a:hover{text-decoration:underline;color:#fff}
+.rp .legal{margin-top:44px;border-top:1px solid rgba(255,255,255,.35);padding-top:24px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;font-size:13.5px;color:rgba(255,255,255,.85)}
+.rp .lk2{display:flex;flex-wrap:wrap;align-items:center;gap:6px 20px}
+.rp .cr{font-size:12px;color:rgba(255,255,255,.62);white-space:nowrap}
+@media (max-width:900px){.rp .g{grid-template-columns:1fr 1fr}.rp .rb{grid-column:1/-1}.rp{padding-top:40px}}
+</style>
+</head>
+<body>
+<header class="band" id="band" role="img" aria-label="Malha de chevrons Inovare com o logo Amazonas Inovare"></header>
+<main class="stage" id="stage">
+<div class="wrap">
+ <div class="tx">
+  <h1><span class="ln"><span class="w" style="--i:0">Cada</span> <span class="w" style="--i:1">venda.</span></span><span class="ln"><span class="w" style="--i:2">Uma</span> <span class="w" style="--i:3">operação</span> <span class="w" style="--i:4">inteira.</span></span></h1>
+  <p class="lead in1" style="--i:5">Cinco soluções para o terminal e para a loja</p>
+  <div class="rot in1" style="--i:6" aria-hidden="true"><ul id="rot">
+   <li><div class="nm"><svg viewBox="0 0 11 20"><path fill="#BFE3E6" d="M0 0H3.6L9.4 10 3.6 20H0l5.8-10z"/></svg>MDM-Hub</div><div class="ds">O parque de terminais no mapa, sem mandar técnico.</div></li>
+   <li><div class="nm"><svg viewBox="0 0 11 20"><path fill="#B9D0E6" d="M0 0H3.6L9.4 10 3.6 20H0l5.8-10z"/></svg>Gateway de Pagamentos</div><div class="ds">Cartão e Pix dentro do seu sistema, por uma API.</div></li>
+   <li><div class="nm"><svg viewBox="0 0 11 20"><path fill="#B2E0DD" d="M0 0H3.6L9.4 10 3.6 20H0l5.8-10z"/></svg>Laboratório e testes</div><div class="ds">Valide o terminal antes de ir a campo.</div></li>
+   <li><div class="nm"><svg viewBox="0 0 11 20"><path fill="#B5E3D8" d="M0 0H3.6L9.4 10 3.6 20H0l5.8-10z"/></svg>Gestão de Mídia</div><div class="ds">Programe telas, totens e LED de um console só.</div></li>
+   <li><div class="nm"><svg viewBox="0 0 11 20"><path fill="#B5D3DE" d="M0 0H3.6L9.4 10 3.6 20H0l5.8-10z"/></svg>AI Retail</div><div class="ds">Mapa de calor, fluxo por área e painel por loja.</div></li>
+  </ul></div>
+  <p class="sr">Soluções da Inovare: MDM-Hub, Gateway de Pagamentos, Laboratório e testes, Gestão de Mídia e AI Retail.</p>
+ </div>
+ <div class="card in1" id="card" style="--i:7">
+  <div class="cab"><h2>Fale com um especialista</h2><p class="s">Deixe seu contato. Um especialista da Inovare retorna para você.</p></div>
+  <form id="f" novalidate>
+   <input type="hidden" name="origem" value="feira">
+   <div class="fld"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="name" required></div>
+   <div class="fld"><label for="mail">E-mail corporativo</label><input id="mail" name="mail" type="email" autocomplete="email" inputmode="email" required></div>
+   <div class="fld"><label for="emp">Empresa</label><input id="emp" name="emp" type="text" autocomplete="organization" required></div>
+   <div class="fld"><label for="perfil">O que você opera</label><select id="perfil" name="perfil"><option>Adquirente ou subadquirente</option><option>Software house</option><option>Fabricante de terminais</option><option>Varejo ou operador de telas</option><option>Outro</option></select></div>
+   <label class="ck"><input id="lgpd" name="lgpd" type="checkbox" required><span>Autorizo a Inovare a usar estes dados para responder ao meu contato, conforme a <a href="../">Política de Privacidade</a>.</span></label>
+   <button class="btn" type="submit">Falar com especialista <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 7h11M8 3l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </form>
+  <div class="ok" role="status"><svg viewBox="124.238 130.793 76.918 40.629" aria-hidden="true"><path fill="currentColor" d="M 133.375 151.109 L 145.105 130.793 L 135.969 130.793 L 124.238 151.109 L 135.969 171.422 L 145.105 171.422 Z M 189.426 130.793 L 180.289 130.793 L 192.016 151.109 L 180.289 171.422 L 189.426 171.422 L 201.156 151.109 Z M 168.5625 130.792969 L 156.832031 130.792969 L 162.695312 140.949219 Z M 156.832031 171.421875 L 168.5625 171.421875 L 162.695312 161.265625 Z M 150.96875 140.949219 L 145.105469 151.109375 L 150.96875 161.265625 L 156.832031 151.109375 Z M 174.425781 140.949219 L 168.5625 151.109375 L 174.425781 161.265625 L 180.289062 151.109375 Z"/></svg><h2>Recebemos o seu contato.</h2><p class="s">Um especialista da Inovare retorna para você.</p></div>
+ </div>
+</div>
+</main>
+<footer class="rp"><div class="in"><div class="g">
+<div class="rb"><span class="logo"><svg role="img" aria-label="Amazonas Inovare" xmlns="http://www.w3.org/2000/svg" viewBox="113.976562 131.613281 282.312500 49.000000" fill="currentColor"><path fill="#FFFFFF" d="M 319.164062 149.132812 L 311.757812 149.132812 L 307.042969 163.855469 C 306.179688 166.582031 305.3125 169.832031 304.664062 172.253906 L 304.445312 172.253906 C 303.796875 169.832031 302.929688 166.539062 302.0625 163.8125 L 297.308594 149.132812 L 289.902344 149.132812 L 300.539062 180.09375 L 308.527344 180.09375 Z M 363.902344 159.609375 C 363.902344 156.839844 362.515625 155.539062 359.3125 155.539062 L 355.195312 155.539062 L 355.195312 163.679688 L 359.3125 163.679688 C 362.515625 163.679688 363.902344 162.425781 363.902344 159.609375 M 372.339844 180.09375 L 364.304688 180.09375 L 357.96875 169.746094 L 355.195312 169.746094 L 355.195312 180.09375 L 348.226562 180.09375 L 348.226562 149.132812 L 359.527344 149.132812 C 366.890625 149.132812 371.046875 153.15625 371.046875 159.566406 C 371.046875 164.070312 368.792969 167.230469 364.8125 168.707031 Z M 382.644531 173.816406 L 382.644531 167.492188 L 394.164062 167.492188 L 394.164062 161.34375 L 382.644531 161.34375 L 382.644531 155.410156 L 395.59375 155.410156 L 395.59375 149.132812 L 375.675781 149.132812 L 375.675781 180.09375 L 396.289062 180.09375 L 396.289062 173.816406 Z M 251.78125 149.132812 L 251.78125 157.664062 C 251.78125 161.257812 251.957031 165.328125 252.257812 169.226562 L 252.128906 169.269531 C 251.175781 167.101562 249.316406 163.464844 247.496094 160 L 241.402344 149.132812 L 234.289062 149.132812 L 234.289062 180.09375 L 241.171875 180.09375 L 241.171875 172.515625 C 241.171875 168.707031 240.871094 164.113281 240.480469 160.171875 L 240.609375 160.128906 C 241.648438 162.597656 243.726562 167.015625 245.632812 170.222656 L 251.578125 180.09375 L 258.667969 180.09375 L 258.667969 149.132812 Z M 334.117188 168.140625 C 332.90625 164.332031 331.5625 159.609375 330.695312 156.707031 L 330.523438 156.707031 C 329.65625 159.609375 328.316406 164.332031 327.144531 168.140625 Z M 345.066406 180.09375 L 337.691406 180.09375 L 335.894531 174.160156 L 325.371094 174.160156 L 323.527344 180.09375 L 316.152344 180.09375 L 326.703125 149.132812 L 334.515625 149.132812 Z M 270.457031 168.183594 L 270.457031 160.953125 C 270.457031 157.140625 272.320312 155.148438 275.957031 155.148438 C 279.640625 155.148438 281.457031 157.140625 281.457031 160.953125 L 281.457031 168.183594 C 281.457031 172.039062 279.640625 174.03125 275.957031 174.03125 C 272.320312 174.03125 270.457031 172.039062 270.457031 168.183594 M 288.601562 168.316406 L 288.601562 160.824219 C 288.601562 153.113281 283.925781 148.566406 275.957031 148.566406 C 268.035156 148.566406 263.355469 153.113281 263.355469 160.824219 L 263.355469 168.316406 C 263.355469 176.066406 268.035156 180.613281 275.957031 180.613281 C 283.925781 180.613281 288.601562 176.066406 288.601562 168.316406 M 221.898438 180.09375 L 228.871094 180.09375 L 228.871094 149.132812 L 221.898438 149.132812 Z M 221.898438 180.09375"/><path fill="#FFFFFF" d="M 155.976562 180.136719 L 169.972656 180.136719 L 162.976562 168.011719 Z M 155.976562 180.136719"/><path fill="#FFFFFF" d="M 148.976562 143.765625 L 141.976562 155.890625 L 148.976562 168.011719 L 155.976562 155.890625 Z M 148.976562 143.765625"/><path fill="#FFFFFF" d="M 176.972656 143.765625 L 169.972656 155.890625 L 176.972656 168.011719 L 183.972656 155.890625 Z M 176.972656 143.765625"/><path fill="#FFFFFF" d="M 169.972656 131.644531 L 155.976562 131.644531 L 162.972656 143.765625 Z M 169.972656 131.644531"/><path fill="#FFFFFF" d="M 127.976562 155.890625 L 141.976562 131.644531 L 127.976562 131.644531 L 113.976562 155.890625 L 127.976562 180.136719 L 141.976562 180.136719 Z M 127.976562 155.890625"/><path fill="#FFFFFF" d="M 197.972656 131.644531 L 183.972656 131.644531 L 197.972656 155.890625 L 183.972656 180.136719 L 197.972656 180.136719 L 211.96875 155.890625 Z M 197.972656 131.644531"/><path fill="#FFFFFF" d="M 229.414062 139.3125 L 228.09375 135.632812 C 227.796875 134.796875 227.601562 134.039062 227.40625 133.300781 L 227.363281 133.300781 C 227.167969 134.039062 226.972656 134.835938 226.695312 135.613281 L 225.394531 139.3125 Z M 225.039062 140.601562 L 223.660156 144.621094 L 221.886719 144.621094 L 226.417969 131.839844 L 228.46875 131.839844 L 233 144.621094 L 231.167969 144.621094 L 229.75 140.601562 Z M 225.039062 140.601562"/><path fill="#FFFFFF" d="M 246.0625 139.007812 C 245.964844 137.226562 245.847656 135.066406 245.847656 133.492188 L 245.808594 133.492188 C 245.332031 134.96875 244.800781 136.582031 244.132812 138.34375 L 241.785156 144.546875 L 240.488281 144.546875 L 238.320312 138.457031 C 237.6875 136.636719 237.175781 135.007812 236.800781 133.492188 L 236.761719 133.492188 C 236.722656 135.082031 236.625 137.207031 236.507812 139.140625 L 236.152344 144.621094 L 234.515625 144.621094 L 235.441406 131.839844 L 237.628906 131.839844 L 239.894531 138.023438 C 240.449219 139.597656 240.882812 141 241.234375 142.328125 L 241.273438 142.328125 C 241.628906 141.039062 242.101562 139.636719 242.691406 138.023438 L 245.058594 131.839844 L 247.246094 131.839844 L 248.070312 144.621094 L 246.378906 144.621094 Z M 246.0625 139.007812"/><path fill="#FFFFFF" d="M 257.035156 139.3125 L 255.714844 135.632812 C 255.417969 134.796875 255.222656 134.039062 255.027344 133.300781 L 254.988281 133.300781 C 254.789062 134.039062 254.59375 134.835938 254.316406 135.613281 L 253.015625 139.3125 Z M 252.660156 140.601562 L 251.28125 144.621094 L 249.507812 144.621094 L 254.039062 131.839844 L 256.089844 131.839844 L 260.621094 144.621094 L 258.789062 144.621094 L 257.371094 140.601562 Z M 252.660156 140.601562"/><path fill="#FFFFFF" d="M 261.664062 143.65625 L 269.015625 133.28125 L 269.015625 133.226562 L 262.296875 133.226562 L 262.296875 131.839844 L 271.261719 131.839844 L 271.261719 132.84375 L 263.929688 143.179688 L 263.929688 143.238281 L 271.359375 143.238281 L 271.359375 144.621094 L 261.664062 144.621094 Z M 261.664062 143.65625"/><path fill="#FFFFFF" d="M 274.078125 138.289062 C 274.078125 141.039062 275.613281 143.484375 278.332031 143.484375 C 281.054688 143.484375 282.589844 141.074219 282.589844 138.175781 C 282.589844 135.613281 281.210938 132.957031 278.351562 132.957031 C 275.496094 132.957031 274.078125 135.5 274.078125 138.289062 M 284.402344 138.097656 C 284.402344 142.480469 281.625 144.832031 278.234375 144.832031 C 274.707031 144.832031 272.265625 142.195312 272.265625 138.324219 C 272.265625 134.265625 274.867188 131.613281 278.414062 131.613281 C 282.058594 131.613281 284.402344 134.285156 284.402344 138.097656"/><path fill="#FFFFFF" d="M 286.628906 144.621094 L 286.628906 131.839844 L 288.519531 131.839844 L 292.753906 138.308594 C 293.722656 139.804688 294.507812 141.152344 295.121094 142.460938 L 295.179688 142.441406 C 295.019531 140.734375 294.980469 139.179688 294.980469 137.1875 L 294.980469 131.839844 L 296.597656 131.839844 L 296.597656 144.621094 L 294.863281 144.621094 L 290.644531 138.136719 C 289.71875 136.714844 288.832031 135.253906 288.183594 133.871094 L 288.125 133.886719 C 288.222656 135.5 288.242188 137.035156 288.242188 139.160156 L 288.242188 144.621094 Z M 286.628906 144.621094"/><path fill="#FFFFFF" d="M 306.113281 139.3125 L 304.792969 135.632812 C 304.496094 134.796875 304.300781 134.039062 304.101562 133.300781 L 304.0625 133.300781 C 303.867188 134.039062 303.671875 134.835938 303.394531 135.613281 L 302.09375 139.3125 Z M 301.738281 140.601562 L 300.359375 144.621094 L 298.585938 144.621094 L 303.117188 131.839844 L 305.167969 131.839844 L 309.699219 144.621094 L 307.867188 144.621094 L 306.449219 140.601562 Z M 301.738281 140.601562"/><path fill="#FFFFFF" d="M 311.433594 142.613281 C 312.199219 143.085938 313.304688 143.445312 314.484375 143.445312 C 316.238281 143.445312 317.265625 142.554688 317.265625 141.265625 C 317.265625 140.089844 316.554688 139.386719 314.761719 138.742188 C 312.59375 137.984375 311.253906 136.886719 311.253906 135.101562 C 311.253906 133.109375 312.96875 131.632812 315.550781 131.632812 C 316.890625 131.632812 317.894531 131.933594 318.464844 132.257812 L 317.992188 133.605469 C 317.578125 133.355469 316.691406 132.996094 315.492188 132.996094 C 313.679688 132.996094 312.988281 134.039062 312.988281 134.914062 C 312.988281 136.105469 313.796875 136.695312 315.628906 137.378906 C 317.875 138.210938 319 139.253906 319 141.132812 C 319 143.105469 317.5 144.832031 314.367188 144.832031 C 313.085938 144.832031 311.6875 144.453125 310.976562 143.996094 Z M 311.433594 142.613281"/></svg></span><p class="dsc">Software, laboratório e operação para terminais de pagamento e varejo. Manaus, Amazonas.</p></div>
+<div><h4>Soluções</h4><ul><li><a href="../">MDM-Hub</a></li><li><a href="../">Gateway de Pagamentos</a></li><li><a href="../">Laboratório e testes</a></li><li><a href="../">Gestão de Mídia</a></li><li><a href="../">AI Retail</a></li></ul></div>
+<div><h4>Para quem</h4><ul><li><a href="../">Adquirentes e subadquirentes</a></li><li><a href="../">Software houses</a></li><li><a href="../">Fabricantes de terminais</a></li><li><a href="../">Varejo e telas</a></li></ul></div>
+<div><h4>Empresa</h4><ul><li><a href="../">Sobre</a></li><li><a href="../">Parceiros</a></li><li><a href="../">Contato</a></li></ul></div>
+</div><div class="legal"><span>© 2026 Amazonas Inovare Tecnologia</span><span class="lk2"><a href="../">Política de privacidade</a><a href="#" id="ck-abrir">Preferências de cookies</a><span class="cr">Site por <a href="https://communitas.com.br" target="_blank" rel="noopener">Communitas</a></span></span></div></div></footer>
+<script>
+(function(){
+var doc=document.documentElement,band=document.getElementById('band');
+var force=location.search.indexOf('anim')>=0;if(force)doc.classList.add('force');
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches&&!force;
+var S3=Math.sqrt(3),GREEN='#32FF00',TEAL=[108,187,189],MID=[32,144,160],PET=[2,84,104];
+var LOGO='<path fill="#FFFFFF" d="M 319.164062 149.132812 L 311.757812 149.132812 L 307.042969 163.855469 C 306.179688 166.582031 305.3125 169.832031 304.664062 172.253906 L 304.445312 172.253906 C 303.796875 169.832031 302.929688 166.539062 302.0625 163.8125 L 297.308594 149.132812 L 289.902344 149.132812 L 300.539062 180.09375 L 308.527344 180.09375 Z M 363.902344 159.609375 C 363.902344 156.839844 362.515625 155.539062 359.3125 155.539062 L 355.195312 155.539062 L 355.195312 163.679688 L 359.3125 163.679688 C 362.515625 163.679688 363.902344 162.425781 363.902344 159.609375 M 372.339844 180.09375 L 364.304688 180.09375 L 357.96875 169.746094 L 355.195312 169.746094 L 355.195312 180.09375 L 348.226562 180.09375 L 348.226562 149.132812 L 359.527344 149.132812 C 366.890625 149.132812 371.046875 153.15625 371.046875 159.566406 C 371.046875 164.070312 368.792969 167.230469 364.8125 168.707031 Z M 382.644531 173.816406 L 382.644531 167.492188 L 394.164062 167.492188 L 394.164062 161.34375 L 382.644531 161.34375 L 382.644531 155.410156 L 395.59375 155.410156 L 395.59375 149.132812 L 375.675781 149.132812 L 375.675781 180.09375 L 396.289062 180.09375 L 396.289062 173.816406 Z M 251.78125 149.132812 L 251.78125 157.664062 C 251.78125 161.257812 251.957031 165.328125 252.257812 169.226562 L 252.128906 169.269531 C 251.175781 167.101562 249.316406 163.464844 247.496094 160 L 241.402344 149.132812 L 234.289062 149.132812 L 234.289062 180.09375 L 241.171875 180.09375 L 241.171875 172.515625 C 241.171875 168.707031 240.871094 164.113281 240.480469 160.171875 L 240.609375 160.128906 C 241.648438 162.597656 243.726562 167.015625 245.632812 170.222656 L 251.578125 180.09375 L 258.667969 180.09375 L 258.667969 149.132812 Z M 334.117188 168.140625 C 332.90625 164.332031 331.5625 159.609375 330.695312 156.707031 L 330.523438 156.707031 C 329.65625 159.609375 328.316406 164.332031 327.144531 168.140625 Z M 345.066406 180.09375 L 337.691406 180.09375 L 335.894531 174.160156 L 325.371094 174.160156 L 323.527344 180.09375 L 316.152344 180.09375 L 326.703125 149.132812 L 334.515625 149.132812 Z M 270.457031 168.183594 L 270.457031 160.953125 C 270.457031 157.140625 272.320312 155.148438 275.957031 155.148438 C 279.640625 155.148438 281.457031 157.140625 281.457031 160.953125 L 281.457031 168.183594 C 281.457031 172.039062 279.640625 174.03125 275.957031 174.03125 C 272.320312 174.03125 270.457031 172.039062 270.457031 168.183594 M 288.601562 168.316406 L 288.601562 160.824219 C 288.601562 153.113281 283.925781 148.566406 275.957031 148.566406 C 268.035156 148.566406 263.355469 153.113281 263.355469 160.824219 L 263.355469 168.316406 C 263.355469 176.066406 268.035156 180.613281 275.957031 180.613281 C 283.925781 180.613281 288.601562 176.066406 288.601562 168.316406 M 221.898438 180.09375 L 228.871094 180.09375 L 228.871094 149.132812 L 221.898438 149.132812 Z M 221.898438 180.09375"/><path fill="#FFFFFF" d="M 155.976562 180.136719 L 169.972656 180.136719 L 162.976562 168.011719 Z M 155.976562 180.136719"/><path fill="#FFFFFF" d="M 148.976562 143.765625 L 141.976562 155.890625 L 148.976562 168.011719 L 155.976562 155.890625 Z M 148.976562 143.765625"/><path fill="#FFFFFF" d="M 176.972656 143.765625 L 169.972656 155.890625 L 176.972656 168.011719 L 183.972656 155.890625 Z M 176.972656 143.765625"/><path fill="#FFFFFF" d="M 169.972656 131.644531 L 155.976562 131.644531 L 162.972656 143.765625 Z M 169.972656 131.644531"/><path fill="#FFFFFF" d="M 127.976562 155.890625 L 141.976562 131.644531 L 127.976562 131.644531 L 113.976562 155.890625 L 127.976562 180.136719 L 141.976562 180.136719 Z M 127.976562 155.890625"/><path fill="#FFFFFF" d="M 197.972656 131.644531 L 183.972656 131.644531 L 197.972656 155.890625 L 183.972656 180.136719 L 197.972656 180.136719 L 211.96875 155.890625 Z M 197.972656 131.644531"/><path fill="#FFFFFF" d="M 229.414062 139.3125 L 228.09375 135.632812 C 227.796875 134.796875 227.601562 134.039062 227.40625 133.300781 L 227.363281 133.300781 C 227.167969 134.039062 226.972656 134.835938 226.695312 135.613281 L 225.394531 139.3125 Z M 225.039062 140.601562 L 223.660156 144.621094 L 221.886719 144.621094 L 226.417969 131.839844 L 228.46875 131.839844 L 233 144.621094 L 231.167969 144.621094 L 229.75 140.601562 Z M 225.039062 140.601562"/><path fill="#FFFFFF" d="M 246.0625 139.007812 C 245.964844 137.226562 245.847656 135.066406 245.847656 133.492188 L 245.808594 133.492188 C 245.332031 134.96875 244.800781 136.582031 244.132812 138.34375 L 241.785156 144.546875 L 240.488281 144.546875 L 238.320312 138.457031 C 237.6875 136.636719 237.175781 135.007812 236.800781 133.492188 L 236.761719 133.492188 C 236.722656 135.082031 236.625 137.207031 236.507812 139.140625 L 236.152344 144.621094 L 234.515625 144.621094 L 235.441406 131.839844 L 237.628906 131.839844 L 239.894531 138.023438 C 240.449219 139.597656 240.882812 141 241.234375 142.328125 L 241.273438 142.328125 C 241.628906 141.039062 242.101562 139.636719 242.691406 138.023438 L 245.058594 131.839844 L 247.246094 131.839844 L 248.070312 144.621094 L 246.378906 144.621094 Z M 246.0625 139.007812"/><path fill="#FFFFFF" d="M 257.035156 139.3125 L 255.714844 135.632812 C 255.417969 134.796875 255.222656 134.039062 255.027344 133.300781 L 254.988281 133.300781 C 254.789062 134.039062 254.59375 134.835938 254.316406 135.613281 L 253.015625 139.3125 Z M 252.660156 140.601562 L 251.28125 144.621094 L 249.507812 144.621094 L 254.039062 131.839844 L 256.089844 131.839844 L 260.621094 144.621094 L 258.789062 144.621094 L 257.371094 140.601562 Z M 252.660156 140.601562"/><path fill="#FFFFFF" d="M 261.664062 143.65625 L 269.015625 133.28125 L 269.015625 133.226562 L 262.296875 133.226562 L 262.296875 131.839844 L 271.261719 131.839844 L 271.261719 132.84375 L 263.929688 143.179688 L 263.929688 143.238281 L 271.359375 143.238281 L 271.359375 144.621094 L 261.664062 144.621094 Z M 261.664062 143.65625"/><path fill="#FFFFFF" d="M 274.078125 138.289062 C 274.078125 141.039062 275.613281 143.484375 278.332031 143.484375 C 281.054688 143.484375 282.589844 141.074219 282.589844 138.175781 C 282.589844 135.613281 281.210938 132.957031 278.351562 132.957031 C 275.496094 132.957031 274.078125 135.5 274.078125 138.289062 M 284.402344 138.097656 C 284.402344 142.480469 281.625 144.832031 278.234375 144.832031 C 274.707031 144.832031 272.265625 142.195312 272.265625 138.324219 C 272.265625 134.265625 274.867188 131.613281 278.414062 131.613281 C 282.058594 131.613281 284.402344 134.285156 284.402344 138.097656"/><path fill="#FFFFFF" d="M 286.628906 144.621094 L 286.628906 131.839844 L 288.519531 131.839844 L 292.753906 138.308594 C 293.722656 139.804688 294.507812 141.152344 295.121094 142.460938 L 295.179688 142.441406 C 295.019531 140.734375 294.980469 139.179688 294.980469 137.1875 L 294.980469 131.839844 L 296.597656 131.839844 L 296.597656 144.621094 L 294.863281 144.621094 L 290.644531 138.136719 C 289.71875 136.714844 288.832031 135.253906 288.183594 133.871094 L 288.125 133.886719 C 288.222656 135.5 288.242188 137.035156 288.242188 139.160156 L 288.242188 144.621094 Z M 286.628906 144.621094"/><path fill="#FFFFFF" d="M 306.113281 139.3125 L 304.792969 135.632812 C 304.496094 134.796875 304.300781 134.039062 304.101562 133.300781 L 304.0625 133.300781 C 303.867188 134.039062 303.671875 134.835938 303.394531 135.613281 L 302.09375 139.3125 Z M 301.738281 140.601562 L 300.359375 144.621094 L 298.585938 144.621094 L 303.117188 131.839844 L 305.167969 131.839844 L 309.699219 144.621094 L 307.867188 144.621094 L 306.449219 140.601562 Z M 301.738281 140.601562"/><path fill="#FFFFFF" d="M 311.433594 142.613281 C 312.199219 143.085938 313.304688 143.445312 314.484375 143.445312 C 316.238281 143.445312 317.265625 142.554688 317.265625 141.265625 C 317.265625 140.089844 316.554688 139.386719 314.761719 138.742188 C 312.59375 137.984375 311.253906 136.886719 311.253906 135.101562 C 311.253906 133.109375 312.96875 131.632812 315.550781 131.632812 C 316.890625 131.632812 317.894531 131.933594 318.464844 132.257812 L 317.992188 133.605469 C 317.578125 133.355469 316.691406 132.996094 315.492188 132.996094 C 313.679688 132.996094 312.988281 134.039062 312.988281 134.914062 C 312.988281 136.105469 313.796875 136.695312 315.628906 137.378906 C 317.875 138.210938 319 139.253906 319 141.132812 C 319 143.105469 317.5 144.832031 314.367188 144.832031 C 313.085938 144.832031 311.6875 144.453125 310.976562 143.996094 Z M 311.433594 142.613281"/>',LV=[113.976562, 131.613281, 282.3125, 49.0];
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function mix(a,b,f){return 'rgb('+[0,1,2].map(function(i){return Math.round(a[i]+(b[i]-a[i])*f)}).join(',')+')'}
+
+function build(still){
+ var W=band.clientWidth,vh=innerHeight,mobile=W<700,rows=4;
+ var H=Math.round(mobile?Math.min(Math.max(vh*.2,140),190):Math.min(Math.max(vh*.27,190),260));
+ var h=H/(2*rows),t=2*h/S3,k=h,pitch=2*t,R=rng(23);
+ var P=Math.ceil((W+2*pitch)/pitch)*pitch;                       // período da malha: duas cópias andam P sem emenda
+ var tr=document.querySelector('.tx').getBoundingClientRect(),br=band.getBoundingClientRect();
+ var lw=Math.min(Math.max(W*.26,200),400),lh=lw*LV[3]/LV[2],lx=Math.max(tr.left-br.left,16),ly=(H-lh)/2,m=.35*lh;
+ function pts(x,y){return [[x,y],[x+t,y],[x+t+h/S3,y+h],[x+t,y+2*h],[x,y+2*h],[x+h/S3,y+h]].map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')}
+ var cells=[],TWO=2*Math.PI;
+ for(var r=0;r<rows;r++){var y=r*2*h,par=r%2;
+  for(var c=0;c<P/pitch;c++){var x=c*pitch+par*t,mx=x+.5*t+.5*h/S3,my=y+h,a=TWO*mx/P;
+   var yc1=H*(.5+.16*Math.sin(a*2+.6)),yc2=H*(.36+.12*Math.sin(a*3+2.4));
+   var d=Math.max(Math.exp(-Math.pow((my-yc1)/(H*.36),2)),.75*Math.exp(-Math.pow((my-yc2)/(H*.2),2)));
+   d*=.6+.4*Math.pow(Math.sin(a+.8),2);
+   var rr=R();if(d>.12+rr*.20)cells.push({d:d+(R()*.2-.1),x:x,y:y,r:r})}}
+ var cand=cells.filter(function(c){return c.x>W*.45&&c.x<W*.85&&c.r>=1}),best=(cand.length?cand:cells).reduce(function(a,b){return b.d>a.d?b:a});
+ var out='';
+ cells.forEach(function(c){
+  var isG=c===best,f=isG?GREEN:'rgb('+(c.d>.60?TEAL:c.d>.36?MID:PET).join(',')+')';
+  var dl=Math.round(Math.min(c.x,W)/W*900+c.r*28),sw=Math.round(Math.min(c.x,W)/W*2400);
+  out+='<polygon class="ch'+(isG?' g':'')+'" style="--d:'+dl+';--s:'+sw+'" fill="'+f+'" points="'+pts(c.x,c.y)+'"/>'});
+ var grid='';for(var i=0;i<=Math.round(H/k);i++)grid+='<line x1="0" y1="'+(i*k).toFixed(1)+'" x2="'+W+'" y2="'+(i*k).toFixed(1)+'"/>';
+ for(var j=-Math.floor(H/t)-2;j<W/t+H/t+2;j++){grid+='<line x1="'+(j*t).toFixed(1)+'" y1="0" x2="'+(j*t+H/S3).toFixed(1)+'" y2="'+H+'"/>'+'<line x1="'+(j*t).toFixed(1)+'" y1="0" x2="'+(j*t-H/S3).toFixed(1)+'" y2="'+H+'"/>'}
+ // área do logo: tom sobre tom, clareando coluna a coluna até a cor cheia (a malha anda por trás; o véu fica parado)
+ var zx=lx+lw+m,zw=zx+5*pitch,off=(zx/zw).toFixed(3);
+ band.innerHTML='<svg class="malha" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'" aria-hidden="true"><defs><clipPath id="cl"><rect width="'+W+'" height="'+H+'"/></clipPath><linearGradient id="qz" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#095B72" stop-opacity=".9"/><stop offset="'+off+'" stop-color="#095B72" stop-opacity=".9"/><stop offset="1" stop-color="#095B72" stop-opacity="0"/></linearGradient></defs><rect width="'+W+'" height="'+H+'" fill="#095B72"/><g clip-path="url(#cl)" fill="none" stroke="#07505F" stroke-width="1">'+grid+'</g><g clip-path="url(#cl)"><g class="drift" style="--P:'+P+'px"><g>'+out+'</g><g transform="translate('+(-P)+' 0)">'+out+'</g></g><rect x="0" y="0" width="'+zw.toFixed(1)+'" height="'+H+'" fill="url(#qz)"/></g><svg class="lg" x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'" width="'+lw.toFixed(1)+'" height="'+lh.toFixed(1)+'" viewBox="'+LV.join(' ')+'">'+LOGO+'</svg></svg>';
+ band.classList.add('go');if(still||reduce)band.classList.add('still');
+}
+function start(){build(false);document.getElementById('stage').classList.add('go-t');
+ var lw0=innerWidth,tm;addEventListener('resize',function(){clearTimeout(tm);tm=setTimeout(function(){if(Math.abs(innerWidth-lw0)>30||true){lw0=innerWidth;build(true)}},200)});
+}
+var started=false;function go1(){if(started)return;started=true;start()}
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go1);setTimeout(go1,1200);
+// troca das soluções, só em texto; o chevron verde avança junto
+var lis=[].slice.call(document.querySelectorAll('#rot li')),cur=0;
+if(!reduce){
+ lis[0].className='on';
+ setInterval(function(){var p=lis[cur];p.className='out';cur=(cur+1)%lis.length;var n=lis[cur];n.className='';void n.offsetWidth;n.className='on';setTimeout(function(){p.className=''},620);
+  band.querySelectorAll('.ch.g').forEach(function(g){g.classList.remove('hit');void g.getBoundingClientRect();g.classList.add('hit')})},2800);
+}
+// formulário
+var f=document.getElementById('f'),card=document.getElementById('card');
+function valida(){
+ var ok=true,first=null;f.querySelectorAll('.err').forEach(function(e){e.remove()});
+ f.querySelectorAll('[required]').forEach(function(el){
+  el.removeAttribute('aria-invalid');var m='';
+  if(el.type==='checkbox'){if(!el.checked)m='Marque a autorização para enviar.'}
+  else if(!el.value.trim())m={nome:'Informe o seu nome.',mail:'Informe o seu e-mail corporativo.',emp:'Informe o nome da empresa.'}[el.id]||'Preencha este campo.';
+  else if(el.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(el.value.trim()))m='Use um e-mail corporativo, como nome@empresa.com.br.';
+  if(m){ok=false;el.setAttribute('aria-invalid','true');var p=document.createElement('p');p.className='err';p.setAttribute('role','alert');p.textContent=m;(el.closest('.ck')||el.closest('.fld')).insertAdjacentElement(el.closest('.ck')?'afterend':'beforeend',p);if(!first)first=el}
+ });
+ if(first)first.focus();return ok}
+f.addEventListener('submit',function(e){
+ e.preventDefault();if(!valida())return;
+ var d={};new FormData(f).forEach(function(v,k){d[k]=v});
+ var q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign'].forEach(function(k){if(q.get(k))d[k]=q.get(k)});
+ console.log('lead (protótipo, sem envio):',d);
+ card.classList.add('done');setTimeout(function(){f.reset();card.classList.remove('done')},12000)});
+})();
+</script>
+</body>
+</html>
